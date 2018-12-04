@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Run ssh-agent in current environment.
 eval $(ssh-agent -s)
@@ -10,3 +11,5 @@ else
     echo 'Adding $SSH_PRIVATE_KEY to ssh-agent...'
     echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
 fi  
+
+exec "$@"
