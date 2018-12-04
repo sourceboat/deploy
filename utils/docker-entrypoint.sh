@@ -4,7 +4,7 @@
 eval $(ssh-agent -s)
 
 # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store.
-if [ -v $SSH_PRIVATE_KEY ]; then
+if [ -z "$SSH_PRIVATE_KEY" ]; then
     echo 'No $SSH_PRIVATE_KEY was set.'
 else
     echo 'Adding $SSH_PRIVATE_KEY to ssh-agent...'
