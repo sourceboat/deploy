@@ -1,6 +1,7 @@
 FROM alpine:3.8
 
-RUN mkdir -p ~/.ssh
+RUN mkdir -p ~/.ssh \
+    && chmod 700 ~/.ssh
 
 RUN apk add --no-cache \
     bash \
