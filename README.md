@@ -5,6 +5,10 @@
 
 Docker image to run remote commands via SSH.
 
+## Changelog
+
+Check [releases](https://github.com/sourceboat/deploy/releases) for all notable changes.
+
 ## Credits
 
 - [Phil-Bastian Berndt](https://github.com/pehbehbeh)
