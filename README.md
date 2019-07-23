@@ -1,6 +1,6 @@
 # sourceboat/deploy
 
-[![Docker Build Status](https://img.shields.io/docker/build/sourceboat/deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/deploy/builds/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/sourceboat/deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/deploy/builds/)
 [![Release](https://img.shields.io/github/release/sourceboat/deploy.svg?style=flat-square)](https://github.com/sourceboat/deploy/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/sourceboat/deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/deploy/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/sourceboat/deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/deploy)
