@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:3.11.6
 
 RUN mkdir -p ~/.ssh \
     && chmod 700 ~/.ssh
@@ -7,7 +7,9 @@ RUN apk add --no-cache \
     bash \
     ca-certificates \
     curl \
-    openssh
+    httpie \
+    openssh \
+    git
 
 COPY utils/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
