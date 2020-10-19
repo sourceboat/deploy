@@ -3,11 +3,7 @@ updates:
 - package-ecosystem: docker
   directory: "/"
   schedule:
-    interval: weekly
-    day: wednesday
-    time: "11:00"
-    timezone: Europe/Berlin
-  open-pull-requests-limit: 100
+    interval: daily
   reviewers:
   - pehbehbeh
   assignees:
