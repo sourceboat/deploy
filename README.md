@@ -3,7 +3,7 @@
 [![Docker Build Status](https://img.shields.io/docker/cloud/build/sourceboat/deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/deploy/builds/)
 [![Release](https://img.shields.io/github/release/sourceboat/deploy.svg?style=flat-square)](https://github.com/sourceboat/deploy/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/sourceboat/deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/deploy/)
-[![MicroBadger Size](https://img.shields.io/microbadger/image-size/sourceboat/deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/deploy)
+[![Image Size](https://img.shields.io/docker/image-size/sourceboat/deploy?style=flat-square)](https://microbadger.com/images/sourceboat/deploy)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/sourceboat/deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/deploy)
 
 Docker image to run remote commands via SSH.
