@@ -1,4 +1,4 @@
-FROM alpine:3.12.1
+FROM alpine:3.12.2
 
 RUN mkdir -p ~/.ssh \
     && chmod 700 ~/.ssh
