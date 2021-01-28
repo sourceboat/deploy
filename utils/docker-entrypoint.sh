@@ -12,4 +12,13 @@ else
     echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
 fi  
 
+# Add the known hosts from $SSH_KNOWN_HOSTS variable to the current environemnt`s known hosts.
+# This is to prevent StrictHostKeyChecking=no
+if [ -z "$SSH_KNOWN_HOSTS"]; then
+    echo 'No $SSH_KNOWN_HOSTS was set.'
+else 
+    echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    chmod 644 ~/.ssh/known_hosts
+fi
+
 exec "$@"
