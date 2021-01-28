@@ -8,6 +8,32 @@
 
 Docker image to run remote commands via SSH.
 
+## Usage 
+
+### Known hosts
+
+To add your host to the known hosts of the ssh agent, simply add the content to the environment variable `$SSH_KNOWN_HOSTS`.
+
+### SSH Private Key
+
+To add your SSH private key, add the content of your private key to the environment variable `$SSH_PRIVATE_KEY`.
+
+### Example
+To use this image via GitLab CI add the following to the `.gitlab-ci.yml`
+
+```yaml
+
+deploy:
+    stage: deploy
+    image: sourceboat/deploy:latest
+    script:
+        - ssh $HOST <your command>
+```
+
+Make sure, the environment variable `$SSH_KNOWN_HOSTS` and/or `$SSH_PRIVATE_KEY` are set in your project settings
+
+
+
 ## Changelog
 
 Check [releases](https://github.com/sourceboat/deploy/releases) for all notable changes.
