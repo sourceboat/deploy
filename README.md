@@ -13,6 +13,13 @@ Docker image to run remote commands via SSH.
 ### Known hosts
 
 To add your host to the known hosts of the SSH agent, simply add the content to the environment variable `$SSH_KNOWN_HOSTS`.
+To get the the public key for your host, you can use `ssh-keyscan`
+
+```
+$ ssh-keyscan -p <port> <ip-or-hostname>
+```
+
+Put the output of the command into the `$SSH_KNOWN_HOSTS` environment variable.
 
 ### SSH Private Key
 
