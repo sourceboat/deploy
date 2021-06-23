@@ -7,6 +7,7 @@ RUN apk add --no-cache \
     bash \
     ca-certificates \
     curl \
+    py3-setuptools \
     httpie \
     openssh \
     git
